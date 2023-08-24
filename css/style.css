@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     --cor-primaria: rgb(17, 0, 255);
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 .cabecalho{
@@ -40,11 +44,18 @@
     margin: 15px;
 }
 
+.titulo-secao{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    font-size: 35px;
+}
+
 .container-card{
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    
+    justify-content: center;
 }
 
 .card{
