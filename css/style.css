@@ -34,6 +34,10 @@
     color: red;
 }
 
+section{
+    margin: 15px;
+}
+
 .secao-titulos{
     display: flex;
     flex-direction: column;
@@ -108,4 +112,31 @@
 .card-botao button:hover{
     background: rgb(9,9,121);
     background: linear-gradient(22deg, rgba(9,9,121,1) 0%, rgba(5,96,179,1) 30%, rgba(0,212,255,1) 90%);
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+        
+    height: 80px;
+    background: rgb(9,9,121);
+    background: linear-gradient(22deg, rgba(9,9,121,1) 0%, rgba(5,96,179,1) 30%, rgba(0,212,255,1) 90%);
+} 
+
+.informacoes-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.redes-sociais{
+    display: flex;
+    gap: 25px;
+}
+
+.redes-sociais a img{
+    width: 50px;
+
 }
