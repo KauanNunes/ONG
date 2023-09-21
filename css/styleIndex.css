@@ -1,0 +1,79 @@
+section{
+    margin: 15px;
+}
+
+.secao-titulos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    margin: 15px;
+}
+
+.titulo-secao{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    font-size: 35px;
+}
+
+.container-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.card{
+    border: 2px solid var(--cor-primaria);
+    border-radius: 10px;
+    width: 450px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-img, .card-descricao, .card-botao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-descricao{
+    flex-grow: 1;
+}
+
+.card-img img{
+    width: 100%;
+}
+
+.card-botao button{
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid var(--cor-primaria);
+}
+
+.card-botao{
+    width: 100%;
+}
+
+.card-botao button a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    transition: ease-in 2%  ;
+}
+
+.card-botao button:hover{
+    background: rgb(9,9,121);
+    background: linear-gradient(22deg, rgba(9,9,121,1) 0%, rgba(5,96,179,1) 30%, rgba(0,212,255,1) 90%);
+}

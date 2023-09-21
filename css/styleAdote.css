@@ -1,0 +1,18 @@
+form{
+    border: 2px solid blue;
+    border-radius: 10px;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+h1{
+    color: blue;
+    text-align: center;
+}
+
