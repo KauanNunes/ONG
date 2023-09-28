@@ -1,121 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/styleAdote.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styleAdote.css" />
     <title>Adote</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="cabecalho">
-        <div class=""logo></div>
-        <nav class="menu">
-            <ul>
-                <li><a href="#Cachorros"> Cachorros </a></li>
-                <li><a href="#Gatos"> Gatos </a></li>
-                <li><a href="#contato"> Contato </a></li>
-                <li><a href="adote.html"> Adote </a></li>
-            </ul>
-        </nav>
+      <div class="" logo></div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#Cachorros"> Cachorros </a></li>
+          <li><a href="#Gatos"> Gatos </a></li>
+          <li><a href="#contato"> Contato </a></li>
+          <li><a href="adote.html"> Adote </a></li>
+        </ul>
+      </nav>
     </header>
 
-
-
-  
-
     <form action="" method="post">
+      <h1>Formulario de Adoção</h1>
 
-        <h1>Formulario de Adoção</h1>
+      <div>
+        <label for="nome">Nomes</label>
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          placeholder="Informe seu nome"
+          required
+        />
+      </div>
 
-        <div>
-            <label for="nome">Nomes</label>
-            <input type="text" name="nome" id="nome">
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Informe seu email"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="whats">Whatsapp</label>
+        <input
+          type="tel"
+          name="whats"
+          id="whats"
+          placeholder="Informe seu whatsapp"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="endereco">Endereço</label>
+        <input
+          type="text"
+          name="endereco"
+          id="endereco"
+          placeholder="Informe seu endereco"
+          required
+        />
+      </div>
+
+      <div>
+        <p>Informe sua renda media:</p>
+
+        <div class="container-radio">
+          <div>
+            <input
+              type="radio"
+              name="rendaMedia"
+              id="renda1500"
+              value="1500"
+              required
+            />
+            <label for="renda1500">R$ 1.000,00 a R$1.500,00</label>
+          </div>
+
+          <div>
+            <input type="radio" name="rendaMedia" id="renda1501" value="2000" />
+            <label for="renda1501">R$ 1.501,00 a R$2.000,00</label>
+          </div>
+
+          <div>
+            <input type="radio" name="rendaMedia" id="renda2001" value="2500" />
+            <label for="renda2001">R$ 2.001,00 a R$2.500,00</label>
+          </div>
         </div>
+      </div>
 
-        <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
+      <div>
+        <p>Informe as comodidades do seu lar</p>
+
+        <div class="container-checkbox">
+          <div>
+            <input
+              type="checkbox"
+              name="comodidades"
+              id="jardim"
+              value="jardim"
+              required
+            />
+            <label for="jardim">Jardim</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              name="comodidades"
+              id="sacada"
+              value="sacada"
+            />
+            <label for="sacada">Sacada</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              name="comodidades"
+              id="tempo"
+              value="tempo"
+            />
+            <label for="tempo">Tempo para passeio</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              name="comodidades"
+              id="outropets"
+              value="outropets"
+            />
+            <label for="outropets">Outros pets</label>
+          </div>
         </div>
+      </div>
 
-        <div>
-            <label for="whats">Whatsapp</label>
-            <input type="tel" name="whats" id="whats">
-        </div>
+      <div>
+        <label for="mensagem">Deixe sua mensagem</label>
+        <textarea
+          name="mensagem"
+          id="mensagem"
+          placeholder="Comente sobre sua intenções de adoção"
+        ></textarea>
+      </div>
 
-        <div>
-            <label for="endereco">Endereço</label>
-            <input type="text" name="endereco" id="endereco">
-        </div>
-
-        <div>
-            <p>Informe sua renda media: </p>
-           
-            <div>
-                <input type="radio" name="rendaMedia" id="renda1500" value="1500">
-                <label for="renda1500">R$ 1.000,00 a R$1.500,00</label>
-            </div>
-
-            <div>
-                <input type="radio" name="rendaMedia" id="renda1501" value="2000">
-                <label for="renda1501">R$ 1.501,00 a R$2.000,00</label>
-            </div>
-
-            <div>
-                <input type="radio" name="rendaMedia" id="renda2001" value="2500">
-                <label for="renda2001">R$ 2.001,00 a R$2.500,00</label>
-            </div>
-
-        </div>
-
-        <div>
-            <p>Informe as comodidades do seu lar</p>
-
-            <div>
-                <input type="checkbox" name="comodidades" id="jardim" value="jardim">
-                <label for="jardim">Jardim</label>
-            </div>
-
-            <div>
-                <input type="checkbox" name="comodidades" id="sacada" value="sacada">
-                <label for="sacada">Sacada</label>
-            </div>
-
-            <div>
-                <input type="checkbox" name="comodidades" id="tempo" value="tempo">
-                <label for="tempo">Tempo para passeio</label>
-            </div>
-
-            <div>
-                <input type="checkbox" name="comodidades" id="outropets" value="outropets">
-                <label for="outropets">Outros pets</label>
-            </div>
-
-        </div>
-
-        <div>
-            <input type="reset" value="Limpar">
-            <input type="submit" value="Enviar">
-        </div>
-
+      <div class="container-botoes">
+        <input type="reset" value="Limpar" />
+        <input type="submit" value="Enviar" />
+      </div>
     </form>
-    
+
     <footer class="rodape" id="contato">
-        <div class="informacoes-contato">
-            <h3>Nome ONG Felizes</h3>
-            <p>Rua José Manuel nº 192</p>
-            <p>Parque São João - Paranagua</p>
-    
-        </div>
-        <div class="redes-sociais">
-            <a href="http://instagram.com/petfelizes">
-                <img src="./img/redes/logo-insta.png" alt="icone instagram">
-            </a>
-            <a href="http://whatsapp.com">
-                <img src="./img/redes/logo-whats.png" alt="icone whatsapp">
-            </a>
-    
-        </div>
+      <div class="informacoes-contato">
+        <h3>Nome ONG Felizes</h3>
+        <p>Rua José Manuel nº 192</p>
+        <p>Parque São João - Paranagua</p>
+      </div>
+      <div class="redes-sociais">
+        <a href="http://instagram.com/petfelizes">
+          <img src="./img/redes/logo-insta.png" alt="icone instagram" />
+        </a>
+        <a href="http://whatsapp.com">
+          <img src="./img/redes/logo-whats.png" alt="icone whatsapp" />
+        </a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
